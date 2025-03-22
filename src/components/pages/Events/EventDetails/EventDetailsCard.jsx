@@ -15,7 +15,7 @@ const EventDetailsCard = ({ event }) => {
 
   return (
     <div className="max-w-screen-xl md:mx-auto mx-2 ">
-      <h2 className="text-4xl font-semibold text-center text-rose-500 p-5">
+      <h2 className="text-4xl font-semibold text-center text-green-500 p-5">
         {name}
       </h2>
 
@@ -29,10 +29,10 @@ const EventDetailsCard = ({ event }) => {
           />
         </figure>
         <div className="card-body md:w-[650px] mx-auto">
-          <h2 className="card-title text-2xl font-extrabold text-rose-400">
+          <h2 className="card-title text-2xl font-extrabold text-green-400">
             {price}$
           </h2>
-          <progress className="progress progress-error w-56"></progress>
+          <progress className="progress progress-success w-56"></progress>
           <p data-aos="flip-right" className="text-justify">
             {short_description}
           </p>
@@ -41,14 +41,14 @@ const EventDetailsCard = ({ event }) => {
               December 27,2023 <br /> {event?.schedule?.time} <br />
               <div className="md:flex mt-10 gap-5">
                 {event?.schedule?.place_onsite ? (
-                  <h2 className="p-2  mb-1  bg-opacity-50 bg-rose-200 rounded-lg">
+                  <h2 className="p-2  mb-1  bg-opacity-50 bg-green-200 rounded-lg">
                     {event?.schedule?.place_onsite}
                   </h2>
                 ) : (
                   ""
                 )}
                 {event?.schedule?.place_online ? (
-                  <h2 className="p-2  mb-1 bg-opacity-50 bg-rose-200 rounded-lg">
+                  <h2 className="p-2  mb-1 bg-opacity-50 bg-green-200 rounded-lg">
                     {event?.schedule?.place_online}
                   </h2>
                 ) : (
@@ -73,11 +73,11 @@ const EventDetailsCard = ({ event }) => {
           <div className="card-actions items-center justify-between ">
             <label
               htmlFor="my_modal_6"
-              className="btn bg-gradient-to-br text-white from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800"
+              className="btn bg-gradient-to-br text-white from-green-500 to-blue-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800"
             >
               Get Ticket
             </label>
-            <h3 className="text-xl shadow-2xl  rounded-b-lg px-10 p-3 font-semibold text-rose-400 ">
+            <h3 className="text-xl shadow-2xl  rounded-b-lg px-10 p-3 font-semibold text-green-400 ">
               Speaker
             </h3>
           </div>

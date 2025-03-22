@@ -99,7 +99,7 @@ const Login = () => {
               Lost Password?
             </a>
           </div>
-          <button className="w-full text-white bg-blue-700 hover:bg-rose-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          <button className="w-full text-white bg-blue-700 hover:bg-green-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Login to your account
           </button>
           <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
@@ -114,7 +114,7 @@ const Login = () => {
         </form>
         <div>
           <div
-            className="w-full btn  mt-4 flex gap-2 hover:bg-rose-400  mx-auto rounded-3xl bg-blue-600"
+            className="w-full btn  mt-4 flex gap-2 hover:bg-green-400  mx-auto rounded-3xl bg-blue-600"
             onClick={handleGoogleLogin}
           >
             <span className="text-4xl items-center  flex gap-2 mx-auto">

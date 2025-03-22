@@ -24,7 +24,7 @@ const AboutUs = () => {
             className="max-w-full rounded-lg shadow-2xl"
           />
           <div className="pr-4">
-            <h4 className="border-b-4 border-rose-400 w-52">About Us</h4>
+            <h4 className="border-b-4 border-green-400 w-52">About Us</h4>
             <h1 className="md:text-5xl text-2xl font-bold">
               Learn The Newest Strategy Of The Technology Industry
             </h1>

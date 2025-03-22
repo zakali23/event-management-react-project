@@ -4,13 +4,15 @@ const Spornsor = () => {
       <div className=" text-center">
         <h2 className="text-4xl">The Sponsors</h2>
         <progress
-          className="progress progress-error mx-auto w-56"
+          className="progress progress-success mx-auto w-56"
           value="100"
-          max="100"></progress>
+          max="100"
+        ></progress>
       </div>
       <div
         data-aos="zoom-in"
-        className="grid p-10 grid-cols-3 md:grid-cols-6 mb-10 items-center mx-auto gap-5">
+        className="grid p-10 grid-cols-3 md:grid-cols-6 mb-10 items-center mx-auto gap-5"
+      >
         <img
           className="w-40"
           src="https://json-schema.org/img/logos/sponsors/asyncapi-logo-dark.svg"

@@ -16,7 +16,7 @@ const AllEvents = () => {
             <h1 className="mb-5 text-5xl font-bold">Events</h1>
             <p className="mb-5">Join our Events</p>
             <span>
-              <progress className="progress progress-error w-32"></progress>
+              <progress className="progress progress-success w-32"></progress>
             </span>
           </div>
         </div>

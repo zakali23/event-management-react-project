@@ -18,7 +18,7 @@ const Speakers = () => {
       </div>
       <div className="md: max-w-screen-xl  mx-auto mt-2">
         <div className="p-5 text-center">
-          <h2 className="text-4xl  text-rose-400 font-bold ">Our Speakers</h2>
+          <h2 className="text-4xl  text-green-400 font-bold ">Our Speakers</h2>
           <span>
             <progress className="progress progress-error w-32"></progress>
           </span>

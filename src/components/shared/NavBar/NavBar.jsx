@@ -3,11 +3,16 @@ import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import logo from "../../../assets/video/logo.gif";
 import Loading from "../../Loading/Loading";
-
+import imgUser from "../../../assets/images/user.png";
 const NavBar = () => {
   const { logOut, user, loading } = useContext(AuthContext);
   if (loading) {
-    return <> <Loading /> </>
+    return (
+      <>
+        {" "}
+        <Loading />{" "}
+      </>
+    );
   }
   const handleLogOut = () => {
     logOut()
@@ -35,7 +40,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className=" bg-opacity-10 bg-slate-200 relative  z-20 font-semibold  text-rose-500 ">
+      <div className=" bg-opacity-10 bg-slate-200 relative  z-20 font-semibold  text-green-500 ">
         <div className="navbar max-w-screen-xl mx-auto">
           <div className="navbar-start">
             <div className="dropdown">
@@ -64,8 +69,7 @@ const NavBar = () => {
               </ul>
             </div>
             <Link className="flex items-center" to="/">
-              <a className="normal-case text-rose-400 text-5xl py-4">TecH.e</a>
-              <img className="w-12 h-12 rounded-full" src={logo} alt="" />
+              <a className="normal-case text-green-400 text-5xl py-4">MSPR</a>
             </Link>
           </div>
           <div className="navbar-center  hidden lg:flex gap-5">
@@ -79,8 +83,8 @@ const NavBar = () => {
                     tabIndex={-1}
                     className="btn btn-ghost btn-circle avatar"
                   >
-                    <div className="w-10 rounded-full">
-                      <img src={user.photoURL} />
+                    <div className="w-10 rounded-full text-white">
+                      <img src={imgUser} />
                     </div>
                   </label>
                   <ul
@@ -89,7 +93,7 @@ const NavBar = () => {
                   >
                     <li>
                       <a className="justify-between mb-5 items-center">
-                        <p className="text-2xl font-bold text-rose-600">
+                        <p className="text-2xl font-bold text-green-600">
                           {user.displayName}
                         </p>
                         <span className="badge">New</span>
@@ -97,8 +101,11 @@ const NavBar = () => {
                     </li>
                     <li>
                       <a className="justify-between mb-5 items-center">
-                        <Link to={`/paymentsReport`}><button className="btn btn-xs mb-2">Payment Reports</button></Link>
-
+                        <Link to={`/paymentsReport`}>
+                          <button className="btn btn-xs mb-2">
+                            Payment Reports
+                          </button>
+                        </Link>
                       </a>
                     </li>
 

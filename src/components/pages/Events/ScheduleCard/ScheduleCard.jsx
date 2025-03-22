@@ -13,8 +13,9 @@ const ScheduleCard = ({ scheduleData }) => {
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
           className="card card-side bg-base-100 bg-gradient-to-br from-blue-100
-          to-orange-300 shadow-xl">
-          <div className=" text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 text-center  h-full font-semibold rounded-lg text-2xl py-20 px-10 my-auto">
+          to-orange-300 shadow-xl"
+        >
+          <div className=" text-white bg-gradient-to-br from-green-500 to-blue-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-pink-800 text-center  h-full font-semibold rounded-lg text-2xl py-20 px-10 my-auto">
             {time}
           </div>
           <div className="card-body">
@@ -22,14 +23,14 @@ const ScheduleCard = ({ scheduleData }) => {
             <br />
             <div className="md:flex mt-10 gap-5">
               {place_onsite ? (
-                <h2 className="p-2  mb-1 text-sm bg-opacity-50 bg-rose-200 rounded-lg">
+                <h2 className="p-2  mb-1 text-sm bg-opacity-50 bg-green-200 rounded-lg">
                   {place_onsite}
                 </h2>
               ) : (
                 ""
               )}
               {place_online ? (
-                <h2 className="p-2  mb-1 bg-opacity-50 bg-rose-200 rounded-lg">
+                <h2 className="p-2  mb-1 bg-opacity-50 bg-green-200 rounded-lg">
                   {place_online}
                 </h2>
               ) : (
